@@ -1,0 +1,165 @@
+.first-screen__row, .first-screen__form-row, .second-screen__row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  outline: none; }
+
+button {
+  cursor: pointer; }
+
+.header {
+  position: relative;
+  background: white; }
+  .header__body {
+    width: 1235px;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center; }
+  .header__logo {
+    margin: 0 0 40px 0; }
+  .header__menu {
+    margin: 0 0 28px 0; }
+    .header__menu a {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 0.74;
+      color: #6e6e6e;
+      margin: 0 64px 0 0; }
+      .header__menu a:last-child {
+        margin: 0; }
+  .header__right-button {
+    position: absolute;
+    right: 77px;
+    top: 58px;
+    width: 235px;
+    height: 46px;
+    background: #6639b4;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    border: none; }
+
+.first-screen {
+  position: relative; }
+  .first-screen__body {
+    width: 1235px;
+    margin: 0 auto;
+    padding-top: 68px; }
+  .first-screen__bg {
+    z-index: -1;
+    position: absolute;
+    width: 43%;
+    height: 100%;
+    background-color: #f7f8fd; }
+  .first-screen__row {
+    justify-content: space-between;
+    padding-bottom: 55px; }
+  .first-screen__column {
+    width: 50%; }
+  .first-screen__text {
+    padding: 95px 60px 0 48px; }
+    .first-screen__text h1 {
+      font-size: 67px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 15px;
+      color: #6639b4; }
+    .first-screen__text h2 {
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 1.25;
+      color: #464646; }
+  .first-screen__form {
+    padding-bottom: 58px; }
+    .first-screen__form h3 {
+      text-align: center;
+      font-size: 27px;
+      text-transform: uppercase;
+      color: #39bbf5;
+      font-weight: 700; }
+    .first-screen__form h4 {
+      text-align: center;
+      color: #787878;
+      font-size: 19px; }
+    .first-screen__form-row {
+      justify-content: space-between;
+      width: 1010px;
+      margin: 32px auto 0; }
+      .first-screen__form-row input {
+        width: 32.5%;
+        height: 64px;
+        border: 1px solid #f3f3f3;
+        background: #fff;
+        font-size: 24px;
+        padding: 21px 27px; }
+        .first-screen__form-row input::-webkit-input-placeholder {
+          font-weight: 300;
+          color: #c1c1c1; }
+        .first-screen__form-row input:-moz-placeholder {
+          font-weight: 300;
+          color: #c1c1c1; }
+        .first-screen__form-row input::-moz-placeholder {
+          font-weight: 300;
+          color: #c1c1c1; }
+        .first-screen__form-row input:-ms-input-placeholder {
+          font-weight: 300;
+          color: #c1c1c1; }
+    .first-screen__form-btn {
+      width: 32.5%;
+      height: 64px;
+      border: none;
+      background: #ff5625;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 24px;
+      color: #feffff; }
+
+.second-screen {
+  position: relative; }
+  .second-screen__bg {
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    width: 44%;
+    height: 100%;
+    background-color: #f8f8f8; }
+  .second-screen__body {
+    width: 1235px;
+    margin: 0 auto;
+    padding: 129px 0 120px; }
+  .second-screen__row {
+    justify-content: center; }
+  .second-screen__item {
+    position: relative;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    color: #555555;
+    line-height: 26.48px;
+    margin-right: 47px; }
+    .second-screen__item::after {
+      position: absolute;
+      right: -47px;
+      top: 64px;
+      content: '';
+      width: 47px;
+      height: 33px;
+      background: url(../img/r-arrow.png); }
+    .second-screen__item:last-child {
+      margin-right: 0; }
+      .second-screen__item:last-child::after {
+        display: none; }
+    .second-screen__item img {
+      display: block;
+      padding: 0 65px 30px; }

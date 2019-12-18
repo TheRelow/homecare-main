@@ -1,0 +1,172 @@
+$cont1920: 1235px
+
+@mixin placeholder 
+  &::-webkit-input-placeholder
+  	@content
+  &:-moz-placeholder
+  	@content
+  &::-moz-placeholder
+  	@content
+  &:-ms-input-placeholder
+  	@content
+
+
+%flex
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: 'Poppins', sans-serif
+	outline: none
+
+button
+	cursor: pointer
+
+.header
+	position: relative
+	background: white
+	&__body
+		width: $cont1920
+		margin: 0 auto
+		padding-top: 40px
+		text-align: center
+	&__logo
+		margin: 0 0 40px 0
+	&__menu
+		margin: 0 0 28px 0
+		a
+			text-transform: uppercase
+			text-decoration: none
+			font-weight: 500
+			font-size: 19px
+			line-height: 0.74
+			color: #6e6e6e
+			margin: 0 64px 0 0
+			&:last-child
+				margin: 0
+	&__right-button
+		position: absolute
+		right: 77px
+		top: 58px
+		width: 235px
+		height: 46px
+		background: #6639b4
+		text-transform: uppercase
+		font-weight: 500
+		font-size: 24px
+		color: #ffffff
+		border: none
+
+.first-screen
+	position: relative
+	&__body
+		width: $cont1920
+		margin: 0 auto
+		padding-top: 68px
+	&__bg
+		z-index: -1
+		position: absolute
+		width: 43%
+		height: 100%
+		background-color: #f7f8fd
+	&__row
+		@extend %flex
+		justify-content: space-between
+		padding-bottom: 55px
+	&__column
+		width: 50%
+	&__text
+		padding: 95px 60px 0 48px
+		h1
+			font-size: 67px
+			font-weight: 700
+			line-height: 1.25
+			margin-bottom: 15px
+			color: #6639b4
+		h2
+			font-weight: 300
+			font-size: 32px
+			line-height: 1.25
+			color: #464646
+	&__form
+		padding-bottom: 58px
+		h3
+			text-align: center
+			font-size: 27px
+			text-transform: uppercase
+			color: #39bbf5
+			font-weight: 700
+		h4
+			text-align: center
+			color: #787878
+			font-size: 19px
+		&-row
+			@extend %flex
+			justify-content: space-between
+			width: 1010px
+			margin: 32px auto 0
+			input
+				width: 32.5%
+				height: 64px
+				border: 1px solid #f3f3f3
+				background: #fff
+				font-size: 24px
+				padding: 21px 27px
+				@include placeholder
+					font-weight: 300
+					color: #c1c1c1
+		&-btn
+			width: 32.5%
+			height: 64px
+			border: none
+			background: #ff5625
+			text-transform: uppercase
+			font-weight: 700
+			font-size: 24px
+			color: #feffff
+
+.second-screen
+	position: relative
+	&__bg
+		right: 0
+		z-index: -1
+		position: absolute
+		width: 44%
+		height: 100%
+		background-color: #f8f8f8
+	&__body
+		width: $cont1920
+		margin: 0 auto
+		padding: 129px 0 120px
+	&__row
+		@extend %flex
+		justify-content: center
+	&__item
+		position: relative
+		text-align: center
+		font-size: 19px
+		font-weight: 600
+		color: #555555
+		line-height: 26.48px
+		margin-right: 47px
+		&::after
+			position: absolute
+			right: -47px
+			top: 64px
+			content: ''
+			width: 47px
+			height: 33px
+			background: url(../img/r-arrow.png)
+		&:last-child
+			margin-right: 0
+			&::after
+				display: none
+		img
+			display: block
+			padding: 0 65px 30px
